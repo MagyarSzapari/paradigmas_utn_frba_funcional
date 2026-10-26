@@ -1,0 +1,50 @@
+# =====================================================================
+#  .gitignore — paradigmas-funcional-haskell (GHC / Stack / Cabal)
+# =====================================================================
+
+# --- Artefactos de compilación de GHC --------------------------------
+*.o
+*.hi
+*.dyn_o
+*.dyn_hi
+*.p_o
+*.p_hi
+*.hie
+*.chi
+*.chs.h
+*.prof
+*.hp
+*.aux
+*.eventlog
+
+# --- Ejecutables generados al compilar con ghc ------------------------
+*.exe
+*.out
+a.out
+
+# --- Directorios de build de Stack / Cabal ---------------------------
+.stack-work/
+dist/
+dist-newstyle/
+cabal.project.local
+cabal.project.local~
+.ghc.environment.*
+.HTF/
+cabal-dev/
+
+# --- Archivos .cabal generados por hpack a partir de package.yaml -----
+*.cabal
+
+# --- Historial de GHCi / editores ------------------------------------
+.ghci_history
+.history/
+.hlint.yaml.bak
+.vscode/
+.idea/
+*~
+*.swp
+
+# --- Sistema operativo -----------------------------------------------
+Thumbs.db
+Desktop.ini
+.DS_Store
